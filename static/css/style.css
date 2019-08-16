@@ -41,5 +41,6 @@
 #bottomJumbotron{
 	background-image: url('https://images.unsplash.com/photo-1446776877081-d282a0f896e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80');
 	background-size: cover;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    margin-top: 20px;
 } 

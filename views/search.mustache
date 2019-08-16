@@ -2,6 +2,49 @@
 {{> nav}}
 
     <body>
+        <div class="container">
+            <div class="jumbotron jumbotron-fluid" id="topJumbotron">
+                <div class="container">
+                    <h1 class="display-4">Pool Finder</h1>
+                    <p class="lead font-weight-bolder">The site you never knew you needed</p>
+                </div>
+            </div>
+            
+    <div class="container">
+    <h3>Search by Module Number</h3>
+    <form method="POST" action="/search-station" class="form-inline">
+        <!--
+        <label class="sr-only" for="inlineFormInputName2">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="name"  name="name" placeholder="Name"> -->
+        <label class="sr-only" for="inlineFormInputName2">Number</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="id" name="id" placeholder="Number">
+
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
+    </div>
+    {{#message}}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            {{message}}
+        <button type="button" class="close" id="buttonClose" data-dismiss="alert" aria-label="Close">
+       
+            <span aria-hidden="true">&times;</span>
+        </button>            
+        </div>
+        <script type="text/javascript">getRandomImage(random_images_array);</script>
+
+    {{/message}}
+
+
+{{#areaList}}
+    <div class="card">
+        <div class="card-header">
+            {{id}}. {{name}}
+        </div>
+        </div>
+
+    {{/areaList}}
+    <script src="/js/client.js"></script>
+    
 
 <!--</body> and </html> are in the footer--> 
 {{> footer}}

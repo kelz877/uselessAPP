@@ -2,6 +2,16 @@
 {{> nav}}
 
 <body>
+    <div class="container">
+    <div class="jumbotron jumbotron-fluid" id="topJumbotron">
+        <div class="container">
+            <h1 class="display-4">Pool Finder</h1>
+            <p class="lead font-weight-bolder">The site you never knew you needed</p>
+        </div>
+    </div>
+    </div>
+
+
 <div class="container">
     <form action='/add-location' method='POST'>
         <div class="form-group">
@@ -10,7 +20,7 @@
         </div>
         <div class="form-group">
             <label for="description">Description of ISS Area</label>
-            <textarea class="form-control" id="description" name="description" rows="3" placeholder="Description of the area of the space station"></textarea>
+            <textarea class="form-control" id="description" name="description" rows="5" placeholder="Description of the area of the space station"></textarea>
         </div>
         <div class="form-row">
             <div class="form-group col-md-2">
@@ -67,14 +77,6 @@
     </div>
     {{/areaList}}
 </div>
-            <div class="jumbotron jumbotron-fluid" id="topJumbotron">
-                <div class="container">
-                    <h1 class="display-4">Pool Finder</h1>
-                    <p class="lead">The site you never knew you needed</p>
-                </div>
-            </div>
-
-
 
 
 
